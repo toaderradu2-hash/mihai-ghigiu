@@ -593,6 +593,60 @@
 
   .cv-highlight { color: var(--red-light); }
 
+
+  /* STATS BAND */
+  #stats {
+    background: var(--red);
+    padding: 3.5rem 3rem;
+  }
+
+  .stats-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .stat-number {
+    font-size: clamp(2.2rem, 4vw, 3.2rem);
+    font-weight: 900;
+    color: var(--white);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+
+  .stat-suffix {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 900;
+    color: rgba(255,255,255,0.6);
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.4;
+    max-width: 140px;
+  }
+
+  .stat-divider {
+    width: 1px;
+    background: rgba(255,255,255,0.2);
+    align-self: stretch;
+    margin: auto 0;
+  }
+
   /* PRESA */
   #presa { background: var(--off-white); padding: 6rem 3rem; }
   .presa-inner { max-width: 1100px; margin: 0 auto; }
@@ -685,6 +739,43 @@
   }
 
   .presa-arrow:hover { background: var(--red); color: var(--white); }
+
+  /* FACEBOOK CTA */
+  .fb-cta-wrap {
+    margin-top: 2.5rem;
+    background: var(--white);
+    border-radius: 10px;
+    padding: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .fb-cta-text {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+  }
+
+  .fb-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: #1877F2;
+    color: white;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s;
+  }
+
+  .fb-cta-btn:hover { background: #1465d8; }
 
   /* FACEBOOK EMBED */
   .fb-embed-wrap {
@@ -887,7 +978,7 @@
             <svg viewBox="0 0 10 10" width="10" height="10" fill="none" stroke="#C8232A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,2 7,5 3,8"/></svg>
           </span>
         </a>
-        <a href="mailto:alexandru.ghigiu@cdep.ro" class="hero-nav-link">
+        <a href="/cdn-cgi/l/email-protection#27464b425f464943555209404f4e404e526744434257095548" class="hero-nav-link">
           Ia legătura cu Mihai
           <span class="arrow">
             <svg viewBox="0 0 10 10" width="10" height="10" fill="none" stroke="#C8232A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,2 7,5 3,8"/></svg>
@@ -935,6 +1026,29 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-number"><span class="counter" data-target="76">0</span></div>
+      <p class="stat-label">Propuneri legislative inițiate</p>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number"><span class="counter" data-target="11">0</span> <span class="stat-suffix">legi</span></div>
+      <p class="stat-label">Promulgate</p>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number"><span class="counter" data-target="10">0</span></div>
+      <p class="stat-label">Întrebări și interpelări</p>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number"><span class="counter" data-target="32">0</span></div>
+      <p class="stat-label">Luări de cuvânt</p>
+    </div>
   </div>
 </section>
 
@@ -1281,13 +1395,13 @@
       <p class="contact-sub">Vă stau la dispoziție pentru orice propunere sau informații suplimentare. Este suficient să ne scrieți, iar un coleg va reveni către dumneavoastră în cel mai scurt timp.</p>
     </div>
     <div class="contact-items">
-      <a class="contact-item" href="mailto:alexandru.ghigiu@cdep.ro">
+      <a class="contact-item" href="/cdn-cgi/l/email-protection#1b7a777e637a757f696e357c73727c726e5b787f7e6b356974">
         <div class="contact-icon">
           <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
         </div>
         <div>
           <p class="contact-label">Email</p>
-          <p class="contact-value">alexandru.ghigiu@cdep.ro</p>
+          <p class="contact-value"><span class="__cf_email__" data-cfemail="d3b2bfb6abb2bdb7a1a6fdb4bbbab4baa693b0b7b6a3fda1bc">[email&#160;protected]</span></p>
         </div>
       </a>
       <a class="contact-item" href="https://www.facebook.com/alexmihaighigiu" target="_blank">
@@ -1314,7 +1428,7 @@
 
 
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   function closeForm() {
     document.getElementById('heroFormCard').style.display = 'none';
   }
@@ -1351,7 +1465,40 @@
     presaIndex = Math.max(0, Math.min(presaIndex + dir, total - visible));
     var gap = 24;
     var cardWidth = cards[0].getBoundingClientRect().width + gap;
-    grid.style.transform = 'translateX(-' + (presaIndex * cardWidth) + 'px)';
+        grid.style.transform = 'translateX(-' + (presaIndex * cardWidth) + 'px)';
+  }
+</script>
+
+<script>
+  function animateCounters() {
+    var counters = document.querySelectorAll('.counter');
+    counters.forEach(function(counter) {
+      var target = parseInt(counter.getAttribute('data-target'));
+      var duration = 1800;
+      var step = target / (duration / 16);
+      var current = 0;
+      var timer = setInterval(function() {
+        current += step;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        counter.textContent = Math.floor(current);
+      }, 16);
+    });
+  }
+
+  var statsSection = document.getElementById('stats');
+  if (statsSection) {
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          animateCounters();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+    observer.observe(statsSection);
   }
 </script>
 
